@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</header>
+
+  <body>
+    <main>
+      <h1 id="title">How the Pandemic is Affecting Student Life</h1>
+      <div class="master-div-style">
+        <p id="description">As a reminder, all answers are confidential. Answering the survey completely will help our school to better support our students.</p>
+        <form id="survey-form" action="/do-something">
+          <div class="form-rows">
+            <div class="labels"> <label class="text" for="name" id="name-label">Name</label> </div>
+            <div class="fields"> <input type="text" id="name" class="input-fields" placeholder="Enter your name" required> </div>
+          </div>
+          <div class="form-rows">
+            <div class="labels"> <label class="text" for="email" id="email-label">Email</label> </div>
+            <div class="fields"> <input type="email" id="email" class="input-fields" placeholder="Enter your email address" required> </div>
+          </div>
+          <div class="form-rows">
+            <div class="labels"> <label class="text" for="number" id="number-label">How old are you?</label> </div>
+            <div class="fields"> <input type="number" id="number" class="input-fields" placeholder="Enter your age" min="17" max="100"> </div>
+          </div>
+          <div class="form-rows">
+            <div class="labels"> <label class="text" for="dropdown" id="dropdown-label">What year are you in?</label> </div>
+            <div class="fields"> <select name="Location of positive event" id="dropdown" class="dropdown">
+                <option value="freshman">Freshman</option>
+                <option value="sophmore">Sophmore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+                <option value="other">Other</option>
+              </select> </div>
+          </div>
+          <div class="form-rows">
+            <div class="labels"> <label class="text" for="dropdown" id="dropdown-label">How do you prefer learning?</label> </div>
+            <div class="fields"> <select name="Location of positive event" id="dropdown" class="dropdown">
+                <option value="remote">Remote</option>
+                <option value="hybrid">Hybrid</option>
+                <option value="in person">In-Person</option>
+              </select> </div>
+          </div>
+          <div class="form-rows">
+            <div class="labels"> <label class="text" for="dropdown" id="dropdown-label">How do you prefer learning?</label> </div>
+            <div class="fields"> <select name="Location of positive event" id="dropdown" class="dropdown">
+                <option value="full time">Full-time</option>
+                <option value="part time">Part-time</option>
+                <option value="not in college">Not in college</option>
+              </select> </div>
+          </div>
+          <div class="form-rows">
+            <div class="labels"> <label class="text" for="dropdownn" id="dropdown-labell">In what ways have your plans for your education changed as a result of COVID-19?</label> </div>
+            <div class="fields"> <select name="Location of positive event" id="dropdownn" class="dropdownn">
+                <option value="fewer">I am taking FEWER classes than previously planned</option>
+                <option value="more">I am taking MORE classes than previously planned</option>
+                <option value="plan to resume">I am not currently taking classes, but plan to resume</option>
+                <option value="plan to resume">I am not currently taking classes, and do not expect to resume</option>
+                <option value="plan to resume">My plans for education have not changed</option>
+              </select> </div>
+          </div>
+          <div class="form-rows">
+            <div class="labels"> <label class="text" for="time-of-day">At what time of the day do you prefer taking classes?</label> </div>
+            <div class="fields">
+              <ul id="time-of-day" style="list-style: none;">
+                <li class="radio"> <label> Morning <input name="time-radio" type="radio" value="1" class="user-selection"> </label> </li>
+                <li class="radio"> <label> Afternoon <input name="time-radio" type="radio" value="2" class="user-selection"> </label> </li>
+                <li class="radio"> <label> Evening <input name="time-radio" type="radio" value="3" class="user-selection"> </label> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-rows">
+            <div class="labels"> <label class="text" for="time-of-day">What type of degree are you working towards?</label> </div>
+            <div class="fields">
+              <ul id="time-of-day" style="list-style: none;">
+                <li class="radio"> <label> Associates degree <input name="associates degree" type="radio" value="1" class="user-selection"> </label> </li>
+                <li class="radio"> <label> Bachelors degree <input name="bachelors degree" type="radio" value="2" class="user-selection"> </label> </li>
+                <li class="radio"> <label> Masters degree <input name="masters degree" type="radio" value="3" class="user-selection">
+                <li class="radio"> <label> PhD, MD, JD <input name="Phd, MD, JD" type="radio" value="3" class="user-selection">
+                <li class="radio"> <label> Other <input name="other" type="radio" value="3" class="user-selection">
+                <li class="radio"> <label> No degree, just taking classes <input name="no degree" type="radio" value="3" class="user-selection"> </label> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-rows">
+            <div class="labels"> <label for="feelings"> What do you do outside of school hours? <br> (Select all that apply) </label> </div>
+            <div class="fields">
+              <ul id="feelings" style="list-style: none;">
+                <li class="radio"> <label> <input name="outside of school activities" value="1" type="checkbox" class="user-selection"> Work </label> </li>
+                <li class="radio"> <label> <input name="outside of school activities" value="2" type="checkbox" class="user-selection"> Taking care of responsabilities </label> </li>
+                <li class="radio"> <label> <input name="outside of school activities" value="3" type="checkbox" class="user-selection"> Rest (School is exhausting) </label> </li>
+                <li class="radio"> <label> <input name="outside of school activities" value="4" type="checkbox" class="user-selection"> Sports/Gym </label> </li>
+                <li class="radio"> <label> <input name="outside of school activities" value="5" type="checkbox" class="user-selection"> Spending quality time with family/friends </label> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-rows">
+            <div class="labels"> <label for="feelings"> What emotions are you experiencing attending school at the moment? <br> (Select all that apply) </label> </div>
+            <div class="fields">
+              <ul id="feelings" style="list-style: none;">
+                <li class="radio"> <label> <input name="feeling-check" value="1" type="checkbox" class="user-selection"> Excited </label> </li>
+                <li class="radio"> <label> <input name="feeling-check" value="2" type="checkbox" class="user-selection"> Happy </label> </li>
+                <li class="radio"> <label> <input name="feeling-check" value="3" type="checkbox" class="user-selection"> Exhausted </label> </li>
+                <li class="radio"> <label> <input name="feeling-check" value="4" type="checkbox" class="user-selection"> Unmotivated </label> </li>
+                <li class="radio"> <label> <input name="feeling-check" value="5" type="checkbox" class="user-selection"> Other </label> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-rows">
+            <div class="labels"> <label for="event-details"> Please describe a positive and negative experience of college post COVID-19, and detail what changes you would like to see in campus. </label> </div>
+            <div class="fields"> <textarea id="event-details" class="input-fields" style="height: 50px;resize:vertical;font-family: Open Sans Condensed;" name="event-details" cols="1" rows="1" placeholder="Enter your experience here..."></textarea> </div>
+          </div> <button class="button" id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+
+</html>
